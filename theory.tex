@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amsthm,amsfonts,stmaryrd,amssymb} % Math packages
+
+\title{Propz Test}
+\author{Giovana Vieira de Morais}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+  \item[Question 2.]{
+    Some assumptions I made so I could solve this exercise:
+    \begin{itemize}
+      \item{1. All elements are integers. This is not explicit said and I
+        based this only on the options given;}
+      \item{2. The set can be of any possible size. Different sets can lead to
+        the same mean and the size is also not given;}
+      \item{3. At least 4 of the possible options should be in the set.}
+    \end{itemize}
+    Ok, given this, my answer is option A) 30.
+    First of all, the only rule explicit in the question is that
+    $$ x_max = 5 + 2*x_min $$
+    So, if $x_min = 30$, $x_max = 90$ and all other options greater than
+    $x_max$ would be outside the set.
+    From 50 on, it's possible to find a set with all the options and mean = 100
+    for example [50,70,71,70,120,154,155], where $x_min = 50$ and $x_max = 155$,
+    statisfying the $x_max = 5 + 3*x_min$ condition.
+  }
+
+  \item[Question 4]{
+    Considering that the costumers buy ONLY in the store of the mentioned
+    probability (this is not explicit in the question), we have
+    50\% buying in A, 30\% buying in B and 20\% buying in C
+
+    \begin{description}
+      \item[a.]{
+        for A store, the answer rate is 50\%. so 50\% of the costumers
+        did not answer. So here we have 50\% (not-answering-rate) of 50\%
+        (costumer that buy at A) and we can manage to find our
+        $$ P(didn't answer|A) = 0.5*0.5 = 0.25 $$
+        using the same technique, we have
+        $$P(didn't answer|B) = 0.4*0.3 = 0.12$$
+        and $$P(didn't answer|C) = 0.1*0.2 = 0.02$$
+
+        Now, knowing the "didn't aswer rate" of all three stores, we can
+        know too the general rate by summing them: 0.25 + 0.12 + 0.02 = 0.39
+        or 39\%. So this is the probability that a random customer didn't
+        answer the campaign.
+        $$P(didn't answer) = 0.39$$
+      }
+      \item[b.]{
+        To find out a responder that went to C, we can apply Bayes
+        \begin{align*}
+          P(C|answered) &= \frac{P(answered|C) \cdot P(C)}{P(answered)} \\
+                        &= \frac{0.9 \cdot 0.2}{0.61} \\
+                        &= 0.2951
+        \end{align*}
+        So the probability is 29.51\%
+    }
+    \end{description}
+  }
+
+  \item[Question 5]{
+    The probability of getting one the b type dice $(P(b))$ is 3/12 and the
+    probability of getting a six is 0.85, so the conditional probability is of
+    0.2125 or 21.25\%
+  }
+\end{enumerate}
+
+\end{document}
