@@ -1,5 +1,5 @@
-import question_1 as hunter_game
-import question_3 as stats
+import question.question_1 as hunter_game
+import question.question_3 as stats
 import numpy as np
 
 if __name__ == '__main__':

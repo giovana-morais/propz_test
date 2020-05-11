@@ -1,5 +1,5 @@
 import pytest
-import question_1 as game
+import question.question_1 as game
 
 
 def test_movements():

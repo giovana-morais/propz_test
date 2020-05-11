@@ -1,5 +1,5 @@
 import numpy as np
-import question_3 as stats
+import question.question_3 as stats
 import pytest
 
 
