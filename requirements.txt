@@ -3,7 +3,7 @@ more-itertools==8.2.0
 numpy==1.18.4
 packaging==20.3
 pluggy==0.13.1
-py==1.8.1
+py==1.10.0
 pyparsing==2.4.7
 pytest==5.4.2
 -e git+https://github.com/giovana-morais/propz_test.git@e9bc3ab724e81416874fd800eabd185bfe12cdf9#egg=question
